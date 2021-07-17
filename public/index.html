@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Aquarium</title>
+		<script src="socket.io.js" type="text/javascript" charset="utf-8"></script>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="mainClass">
+			<div class="glass"></div>
+
+			<div class="mainBox">
+				<div class="titleBar">
+					<h1>水族館</h1>
+				</div>
+
+				<dl id="chats"></dl>
+
+				<div class="sendBox">
+					<form id="nameForm">
+						<input id="userName" autocomplete="off" placeholder="表示名" />
+						<button>参加</button>
+					</form>
+				</div>
+
+				<div class="sendBox">
+					<form id="form" style="position: relative;width: 100%;">
+						<input id="msg" autocomplete="off" />
+						<button>送信</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
